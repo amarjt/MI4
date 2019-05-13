@@ -63,29 +63,29 @@ body .container .w .line {
 body .container .w .line:first-child {
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
-  -webkit-animation: m-left 1.5s ease-in-out infinite;
-          animation: m-left 1.5s ease-in-out infinite;
+  -webkit-animation: m-left 3s ease-in-out infinite;
+          animation: m-left 3s ease-in-out infinite;
 }
 
 body .container .w .line:nth-child(2) {
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
-  -webkit-animation: m-right 1.5s ease-in-out infinite;
-          animation: m-right 1.5s ease-in-out infinite;
+  -webkit-animation: m-right 3s ease-in-out infinite;
+          animation: m-right 3s ease-in-out infinite;
 }
 
 body .container .w .line:nth-child(3) {
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
-  -webkit-animation: m-left 1.5s ease-in-out infinite;
-          animation: m-left 1.5s ease-in-out infinite;
+  -webkit-animation: m-left 3s ease-in-out infinite;
+          animation: m-left 3s ease-in-out infinite;
 }
 
 body .container .w .line:last-child {
   -webkit-transform: rotate(10deg);
           transform: rotate(10deg);
-  -webkit-animation: m-right 1.5s ease-in-out infinite;
-          animation: m-right 1.5s ease-in-out infinite;
+  -webkit-animation: m-right 3s ease-in-out infinite;
+          animation: m-right 3s ease-in-out infinite;
 }
 
 body .container .i {
@@ -108,133 +108,169 @@ body .container .n .line {
 }
 
 body .container .n .line:first-child {
-  -webkit-animation: n-one 1.5s ease-in-out infinite;
-          animation: n-one 1.5s ease-in-out infinite;
+  -webkit-animation: n-one 3s ease-in-out infinite;
+          animation: n-one 3s ease-in-out infinite;
 }
 
 body .container .n .line:nth-child(2) {
-  -webkit-animation: n-middle 1.5s ease-in-out infinite;
-          animation: n-middle 1.5s ease-in-out infinite;
+  -webkit-animation: n-middle 3s ease-in-out infinite;
+          animation: n-middle 3s ease-in-out infinite;
 }
 
 body .container .n .line:last-child {
   left: 7rem;
-  -webkit-animation: color 1.5s ease-in-out infinite;
-          animation: color 1.5s ease-in-out infinite;
+  -webkit-animation: color 3s ease-in-out infinite;
+          animation: color 3s ease-in-out infinite;
 }
 
 @-webkit-keyframes m-left {
-  from {
+  0% {
     -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg);
   }
-  to {
+  50% {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
 }
 
 @keyframes m-left {
-  from {
+  0% {
     -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg);
   }
-  to {
+  50% {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
 }
 
 @-webkit-keyframes m-right {
-  from {
+  0% {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
   }
-  to {
+  50% {
     -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
 }
 
 @keyframes m-right {
-  from {
+  0% {
     -webkit-transform: rotate(10deg);
             transform: rotate(10deg);
   }
-  to {
+  50% {
     -webkit-transform: rotate(-10deg);
             transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
 }
 
 @-webkit-keyframes n-one {
-  form {
+  0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  to {
+  50% {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     left: 6.8rem;
     background: #777;
     bottom: -3rem;
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
 @keyframes n-one {
-  form {
+  0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
-  to {
+  50% {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     left: 6.8rem;
     background: #777;
     bottom: -3rem;
   }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 @-webkit-keyframes n-middle {
-  from {
+  0% {
     -webkit-transform: rotate(-36.5deg);
             transform: rotate(-36.5deg);
     left: 3.5rem;
     bottom: -1rem;
   }
-  to {
+  50% {
     -webkit-transform: rotate(36.5deg);
             transform: rotate(36.5deg);
     left: 5rem;
     bottom: 1.85rem;
     background: #777;
+  }
+  100% {
+    -webkit-transform: rotate(-36.5deg);
+            transform: rotate(-36.5deg);
+    left: 3.5rem;
+    bottom: -1rem;
   }
 }
 
 @keyframes n-middle {
-  from {
+  0% {
     -webkit-transform: rotate(-36.5deg);
             transform: rotate(-36.5deg);
     left: 3.5rem;
     bottom: -1rem;
   }
-  to {
+  50% {
     -webkit-transform: rotate(36.5deg);
             transform: rotate(36.5deg);
     left: 5rem;
     bottom: 1.85rem;
     background: #777;
   }
+  100% {
+    -webkit-transform: rotate(-36.5deg);
+            transform: rotate(-36.5deg);
+    left: 3.5rem;
+    bottom: -1rem;
+  }
 }
 
 @-webkit-keyframes color {
-  to {
+  50% {
     background: #777;
   }
 }
 
 @keyframes color {
-  to {
+  50% {
     background: #777;
   }
 }
